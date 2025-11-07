@@ -159,7 +159,7 @@ const HeroSection = () => {
                     <DropdownMenuItem
                       onClick={() =>
                         window.open(
-                          "https://drive.google.com/file/d/1BYw2WYBSTD1fzwEIgVyycMuIMMXvbyuH/view?usp=sharing",
+                          "https://drive.google.com/file/d/1uUOzS1l2-pZiJmvGH0QT8laDeNA7uKLP/view?usp=drive_link",
                           "_blank"
                         )
                       }
