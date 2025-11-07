@@ -147,7 +147,7 @@ const HeroSection = () => {
                     <DropdownMenuItem
                       onClick={() =>
                         window.open(
-                          "https://drive.google.com/file/d/15qq05u9ZmelZdVqdFHB03D_-T-gB_Is4/view?usp=drive_link",
+                          "https://drive.google.com/file/d/1iOdM7IBpWBZN_Zlhsv5eCGSNE5Z6J6s3/view?usp=drive_link",
                           "_blank"
                         )
                       }
