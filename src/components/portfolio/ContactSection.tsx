@@ -43,7 +43,7 @@ const ContactSection = () => {
     icon: Linkedin,
     label: "LinkedIn",
     value: "Ibrahim Khalil",
-    href: "https://www.linkedin.com/in/ibrahim-khalil",
+    href: "https://www.linkedin.com/in/ibrahim-khalil1117/",
     color: "text-blue-600"
   }
 ];
