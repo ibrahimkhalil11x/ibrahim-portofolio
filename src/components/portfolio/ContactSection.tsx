@@ -14,7 +14,7 @@ import { useToast } from "@/hooks/use-toast";
 const contactFormSchema = z.object({
   name: z.string().min(1, "Name is required."),
   email: z.string().email("Valid email is required."),
-  subject: z.string().min(1, "Subject is required."),
+  subject: z.string().optional(), // Subject is now optional
   message: z.string().min(1, "Message is required.")
 });
 
@@ -25,28 +25,28 @@ const ContactSection = () => {
   const { toast } = useToast();
   
   const contactMethods = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "khalil.ibrahim.dev@gmail.com",
-    href: "mailto:khalil.ibrahim.dev@gmail.com",
-    color: "text-blue-500"
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+216 51 395 943", 
-    href: "tel:+21651395943",
-    color: "text-green-500"
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    value: "Ibrahim Khalil",
-    href: "https://www.linkedin.com/in/ibrahim-khalil1117/",
-    color: "text-blue-600"
-  }
-];
+    {
+      icon: Mail,
+      label: "Email",
+      value: "khalil.ibrahim.dev@gmail.com",
+      href: "mailto:khalil.ibrahim.dev@gmail.com",
+      color: "text-blue-500"
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+216 51 395 943", 
+      href: "tel:+21651395943",
+      color: "text-green-500"
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      value: "Ibrahim Khalil",
+      href: "https://www.linkedin.com/in/ibrahim-khalil1117/",
+      color: "text-blue-600"
+    }
+  ];
 
   const {
     register,
@@ -69,7 +69,7 @@ const ContactSection = () => {
         {
           from_name: data.name,
           from_email: data.email,
-          subject: data.subject,
+          subject: data.subject || "No subject", // Default if empty
           html_message: data.message,
         },
         USER_ID
@@ -130,25 +130,6 @@ const ContactSection = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Contact Info */}
                 <div className="space-y-8">
-                  {/* <div>
-                    <h3 className="text-2xl font-bold mb-6">Address:</h3>
-                    <p className="text-muted-foreground mb-2">Tunis, Tunisia</p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-bold mb-6">Phone:</h3>
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">+216 53 970 966</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-bold mb-6">Email:</h3>
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">khalil.ibrahim.dev@gmail.com</p>
-                    </div>
-                  </div> */}
-
                   <div className="space-y-6 pt-6 max-[458px]:flex max-[458px]:gap-4 max-[458px]:space-y-0 max-[458px]:justify-center max-[458px]:items-center max-[458px]:flex-wrap">
                     {contactMethods.map((method, index) => {
                       const IconComponent = method.icon;
@@ -221,9 +202,6 @@ const ContactSection = () => {
                         {...register("subject")}
                         className={errors.subject ? "border-destructive" : ""}
                       />
-                      {errors.subject && (
-                        <p className="text-sm text-destructive">{errors.subject.message}</p>
-                      )}
                     </div>
 
                     <div className="space-y-2">
