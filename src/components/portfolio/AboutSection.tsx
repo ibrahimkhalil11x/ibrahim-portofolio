@@ -8,7 +8,7 @@ const AboutSection = () => {
   const stats = [
     {
       label: "Projects Completed",
-      value: "10+",
+      value: "5+",
       icon: <Code2 className="w-5 h-5" />,
     },
   ];
@@ -44,9 +44,9 @@ const AboutSection = () => {
             <span className="gradient-text">About</span> Me
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-            I'm Ibrahim Khalil, a 21-year-old computer science student passionate about software development and emerging technologies. 
-            I'm eager to apply my technical and problem-solving skills to real-world, innovative projects.
-            I specialize in React development and enjoy building modern, user-friendly web applications.
+            I'm Ibrahim Khalil, a computer science student passionate about software development and emerging technologies
+            . I'm eager to apply my technical and problem-solving skills to real-world, innovative projects. I specialize in React and mobile development, and I enjoy building modern, 
+            user-friendly web and mobile applications that deliver seamless user experiences. en fr
           </p>
         </div>
 

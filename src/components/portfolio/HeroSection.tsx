@@ -83,8 +83,8 @@ const HeroSection = () => {
                     : "opacity-0 translate-y-10"
                 }`}
               >
-                Passionate about creating innovative web solutions.
-                Specializing in modern JavaScript frameworks and React development.
+                Passionate about creating innovative web and mobile solutions. 
+                Specializing in modern JavaScript frameworks, React, and mobile development.
               </p>
 
               {/* Contact Info */}
@@ -147,7 +147,7 @@ const HeroSection = () => {
                     <DropdownMenuItem
                       onClick={() =>
                         window.open(
-                          "https://drive.google.com/file/d/1iOdM7IBpWBZN_Zlhsv5eCGSNE5Z6J6s3/view?usp=drive_link",
+                          "https://drive.google.com/file/d/1RKcrRy7QoNyM6Cx40_LpFLhWZ_RWHVDK/view?usp=drive_link",
                           "_blank"
                         )
                       }
@@ -159,7 +159,7 @@ const HeroSection = () => {
                     <DropdownMenuItem
                       onClick={() =>
                         window.open(
-                          "https://drive.google.com/file/d/1uUOzS1l2-pZiJmvGH0QT8laDeNA7uKLP/view?usp=drive_link",
+                          "https://drive.google.com/file/d/10GRNKOXOyXHSVkv56y0k0P-Gnu6ox8qh/view?usp=drive_link",
                           "_blank"
                         )
                       }
