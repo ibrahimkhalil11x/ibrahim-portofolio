@@ -17,6 +17,11 @@ const SkillsSection = () => {
       icon: "🚀"
     },
     {
+      title: "AI & Automation",
+      skills: ["n8n", "OpenAI", "API Integration","AI Voice Agents","Retell AI","ElevenLabs"],
+      icon: "🤖"
+    },
+    {
       title: "Databases",
       skills: ["PostgreSQL", "MySQL", "MongoDB", "Prisma"],
       icon: "🗄️"

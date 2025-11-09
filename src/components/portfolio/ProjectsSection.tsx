@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Github, Link, Image as ImageIcon, Globe } from "lucide-react";
-import gym1 from "@/lib/img/gym1.png";
-import gym2 from "@/lib/img/gym2.png";
+import leadsScreenshot1 from "@/lib/img/image_original.png";
+import leadsScreenshot2 from "@/lib/img/image_original2.png";
 import blacksmithCover from "@/lib/img/Capture d'écran 2025-09-11 143840.png";
 import blacksmithShot1 from "@/lib/img/Capture d'écran 2025-09-11 143436.png";
 import blacksmithShot2 from "@/lib/img/Capture d'écran 2025-09-11 143555.png";
@@ -60,6 +60,26 @@ const ProjectsSection = () => {
         "PostgreSQL",
       ],
       images: [employee1, employee2, employee3], 
+    },
+    {
+      title: "Leads Management System",
+      description:
+        "Responsive app with Airtable-like features: dashboard, leads list, datasets, filters, import CSV files and full CRUD.",
+      type: "Web Application",
+      skills: [
+        "JavaScript",
+        "Svelte",
+        "Node.js",
+        "Tabler UI",
+        "Chart.js",
+        "Prisma",
+        "Neon Postgres",
+        "Airtable",
+        "Dashboard",
+        "n8n",
+        "Vercel",
+      ],
+      images: [leadsScreenshot1, leadsScreenshot2],
     },
   
     {
