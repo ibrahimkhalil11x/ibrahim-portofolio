@@ -42,7 +42,7 @@ const HeroSection = () => {
   <div className="relative flex items-center justify-center">
     {/* Glow effect */}
     <div className="absolute -inset-3 rounded-full bg-blue-40*/20 blur-2xl"></div>
-<div className="w-48 h-60 md:w-60 rounded-[50%] border-4 border-blue-100 shadow-lg overflow-hidden flex items-center justify-center">
+<div className="w-48 h-60 md:w-60 rounded-[50%] border-4 border-blue-100 shadow-lg overflow-hidden flex items-center justify-center mb-28">
   <img
     src="pic1.png"
     alt="Ibrahim Khalil"
