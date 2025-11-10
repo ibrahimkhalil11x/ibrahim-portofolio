@@ -68,12 +68,8 @@ const ProjectsSection = () => {
       type: "Web Application",
       skills: [
         "JavaScript",
-        "Svelte",
         "Node.js",
-        "Tabler UI",
-        "Chart.js",
         "Prisma",
-        "Neon Postgres",
         "Airtable",
         "Dashboard",
         "n8n",
