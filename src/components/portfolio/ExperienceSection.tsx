@@ -11,7 +11,7 @@ const ExperienceSection = () => {
       company: "Dr Oetker GIAS",
       position: "Full Stack Developer",
       period: "06/2025 - 07/2025",
-      location: "Grombalia, Nabeul, Tunisia",
+      location: "Tunis, Tunisia",
       type: "Optional Internship",
       achievements: [
         "Development of an internal website for employee evaluation and performance tracking."
