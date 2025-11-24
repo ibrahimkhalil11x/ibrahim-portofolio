@@ -14,7 +14,7 @@ const ExperienceSection = () => {
       location: "Grombalia, Nabeul, Tunisia",
       type: "Optional Internship",
       achievements: [
-        "Développement d’un site web interne pour l’évaluation et le suivi des employés."
+        "Development of an internal website for employee evaluation and performance tracking."
       ],
       technologies: [
         "JavaScript",
