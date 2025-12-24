@@ -33,7 +33,7 @@ const HeroSection = () => {
           }`}
         >
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
-            {/* Profile Image */}
+  
 <div
   className={`transition-all duration-1000 delay-200 ${
     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -42,11 +42,11 @@ const HeroSection = () => {
   <div className="relative flex items-center justify-center">
     {/* Glow effect */}
     <div className="absolute -inset-3 rounded-full bg-blue-40*/20 blur-2xl"></div>
-<div className="w-48 h-60 md:w-60 rounded-[50%] border-4 border-blue-100 shadow-lg overflow-hidden flex items-center justify-center mb-28">
+<div className="w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-blue-100 shadow-lg overflow-hidden flex items-center justify-center mb-28 bg-white">
   <img
-    src="pic1.png"
+    src="pic2.png"
     alt="Ibrahim Khalil"
-    className="w-[120%] translate-y-4"
+    className="w-[115%] h-[115%] object-cover object-center object-top"
   />
 </div>
 
@@ -56,7 +56,7 @@ const HeroSection = () => {
   </div>
 </div>
 
-            {/* Hero Content */}
+
             <div className="flex-1 text-center md:text-left">
               <h1
                 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-4 transition-all duration-1000 delay-400 ${
