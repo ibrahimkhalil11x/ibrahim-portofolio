@@ -14,10 +14,15 @@ import referral3 from "@/lib/img/image_original3.png";
 import referral4 from "@/lib/img/image_original4.png";
 import referral5 from "@/lib/img/image_original5.png";
 
-// 🔹 Add placeholder images (you’ll replace these later)
+// 🔹 Add placeholder images (you'll replace these later)
 import employee1 from "@/lib/img/employee1.png";
 import employee2 from "@/lib/img/employee2.png";
 import employee3 from "@/lib/img/employee3.png";
+
+// Spring Boot Project Images
+const spring1 = "/spring1.png";
+const spring2 = "/spring2.png";
+const spring3 = "/spring3.png";
 
 type Project = {
   title: string;
@@ -45,7 +50,7 @@ const ProjectsSection = () => {
   };
 
   const allProjects: Project[] = [
-    // 🔹 New project added here FIRST
+    // 🔹 Employee Evaluation Website
     {
       title: "Employee Evaluation Website",
       description:
@@ -59,7 +64,30 @@ const ProjectsSection = () => {
         "Web API",
         "PostgreSQL",
       ],
+      links: {
+        github: "https://github.com/ibrahimkhalil11x/Stage",
+      },
       images: [employee1, employee2, employee3], 
+    },
+    // 🔹 Spring Boot Project
+    {
+      title: "School Management System",
+      description:
+        "A comprehensive school administration platform where teachers can add and manage courses, and students can download course materials. Built with Spring Boot backend, featuring full CRUD operations, user authentication, and MySQL database.",
+      type: "Web Application",
+      skills: [
+        "Spring Boot",
+        "React",
+        "Express.js",
+        "TypeScript",
+        "Postman",
+        "Web API",
+        "MySQL",
+      ],
+      links: {
+        github: "https://github.com/ibrahimkhalil11x/ecole-springboot",
+      },
+      images: [spring1, spring2, spring3], 
     },
     {
       title: "Leads Management System",
