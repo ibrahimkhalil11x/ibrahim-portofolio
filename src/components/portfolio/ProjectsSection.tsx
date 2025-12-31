@@ -10,9 +10,6 @@ import leadsScreenshot2 from "@/lib/img/image_original2.png";
 import blacksmithCover from "@/lib/img/Capture d'écran 2025-09-11 143840.png";
 import blacksmithShot1 from "@/lib/img/Capture d'écran 2025-09-11 143436.png";
 import blacksmithShot2 from "@/lib/img/Capture d'écran 2025-09-11 143555.png";
-import referral3 from "@/lib/img/image_original3.png";
-import referral4 from "@/lib/img/image_original4.png";
-import referral5 from "@/lib/img/image_original5.png";
 
 // 🔹 Add placeholder images (you'll replace these later)
 import employee1 from "@/lib/img/employee1.png";
@@ -24,10 +21,19 @@ const spring1 = "/spring1.png";
 const spring2 = "/spring2.png";
 const spring3 = "/spring3.png";
 
+// React Native Shoes Shop Images
+const shoes1 = "/shoes1.jpeg";
+const shoes2 = "/shoes2.jpeg";
+
+// Referral Images
+import referral3 from "@/lib/img/image_original3.png";
+import referral4 from "@/lib/img/image_original4.png";
+import referral5 from "@/lib/img/image_original5.png";
+
 type Project = {
   title: string;
   description: string;
-  type: "Web Application";
+  type: "Web Application" | "Mobile App";
   skills: string[];
   links?: {
     github?: string;
@@ -90,6 +96,23 @@ const ProjectsSection = () => {
       images: [spring1, spring2, spring3], 
     },
     {
+      title: "React Native Shoes Shop",
+      description:
+        "A mobile e-commerce application for browsing and shopping shoes. Built with React Native featuring product catalog, shopping cart, and seamless user experience.",
+      type: "Web Application",
+      skills: [
+        "React Native",
+        "JavaScript",
+        "Mobile Application",
+        "E-Commerce",
+        "UI/UX",
+      ],
+      links: {
+        github: "https://github.com/ibrahimkhalil11x/native",
+      },
+      images: [shoes1, shoes2],
+    },
+    {
       title: "Leads Management System",
       description:
         "Responsive app with Airtable-like features: dashboard, leads list, datasets, filters, import CSV files and full CRUD.",
@@ -104,22 +127,6 @@ const ProjectsSection = () => {
         "Vercel",
       ],
       images: [leadsScreenshot1, leadsScreenshot2],
-    },
-  
-    {
-      title: "Blacksmith Service Website",
-      description:
-        "A full-stack web application to present a blacksmith's services, showcase project galleries, share professional experience, and provide contact options.",
-      type: "Web Application",
-      skills: [
-        "React",
-        "Express.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "GitHub",
-        "Vercel",
-      ],
-      images: [blacksmithCover, blacksmithShot1, blacksmithShot2],
     },
     {
       title: "Referral Client System",
@@ -138,10 +145,12 @@ const ProjectsSection = () => {
     },
   ];
 
-  const getTypeMeta = () => ({
-    Icon: Globe,
-    label: "Web Application",
-  });
+  const getTypeMeta = () => {
+    if (activeProject?.type === "Mobile App") {
+      return { Icon: Globe, label: "Mobile Application" };
+    }
+    return { Icon: Globe, label: "Web Application" };
+  };
 
   const handleProjectClick = (project: Project) => {
     setActiveProject(project);
