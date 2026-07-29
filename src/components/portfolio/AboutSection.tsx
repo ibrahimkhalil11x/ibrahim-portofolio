@@ -17,7 +17,7 @@ const AboutSection = () => {
     {
       title: "Bachelor's Degree in Computer Science",
       school: "Higher Institute of Computer Science of Mahdia",
-      period: "2024 - 2026",
+      period: "2023 - 2026",
       location: "Mahdia, Tunisie",
     },
     {
