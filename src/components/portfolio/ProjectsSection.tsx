@@ -71,7 +71,7 @@ const ProjectsSection = () => {
         "Groq API",
       ],
       links: {
-        github: "https://github.com/ibrahimkhalil11x/gestionac",
+        github: "https://github.com/seifeddinne0/PFE-front-end",
       },
       images: [
         "/Picture1.png",
