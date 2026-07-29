@@ -8,8 +8,27 @@ const ExperienceSection = () => {
 
   const internships = [
     {
+      company: "ArabSoft",
+      position: "Website Developer",
+      period: "02/2026 - 06/2026",
+      location: "Tunis, Tunisia",
+      type: "Internship",
+      achievements: [
+        "Designed and developed a full-featured academic management web platform for student records, grading, invoicing, internship document workflows, and absence tracking with role-based dashboards for students, teachers, and administrators."
+      ],
+      technologies: [
+        "Next.js",
+        "Spring Boot",
+        "PostgreSQL",
+        "JWT",
+        "OpenRouter API",
+        "Groq API",
+        "GitHub",
+      ],
+    },
+    {
       company: "Dr Oetker GIAS",
-      position: "Full Stack Developer",
+      position: "Website Developer",
       period: "06/2025 - 07/2025",
       location: "Tunis, Tunisia",
       type: "Optional Internship",
@@ -23,7 +42,6 @@ const ExperienceSection = () => {
         "Postman",
         "PostgreSQL",
         "GitHub",
-        
       ],
     },
   ];

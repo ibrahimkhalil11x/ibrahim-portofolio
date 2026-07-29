@@ -13,7 +13,7 @@ const SkillsSection = () => {
     },
     {
       title: "Frameworks & Libraries", 
-      skills: ["React","Next.js", "Express.js", "Bootstrap", "Tailwind"],
+      skills: ["Next.js","React", "Express.js", "Bootstrap", "Tailwind"],
       icon: "🚀"
     },
     {

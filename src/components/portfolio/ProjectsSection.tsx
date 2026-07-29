@@ -56,6 +56,30 @@ const ProjectsSection = () => {
   };
 
   const allProjects: Project[] = [
+    // 🔹 GestionAc Academic Management Platform
+    {
+      title: "Academic Management Platform",
+      description:
+        "Design and development of a full-featured academic management web platform covering student records, grading, invoicing, internship document workflows, and absence tracking, with role-based dashboards for students, teachers, and administrators.",
+      type: "Web Application",
+      skills: [
+        "Next.js",
+        "Spring Boot",
+        "PostgreSQL",
+        "JWT",
+        "OpenRouter API",
+        "Groq API",
+      ],
+      links: {
+        github: "https://github.com/ibrahimkhalil11x/gestionac",
+      },
+      images: [
+        "/Picture1.png",
+        "/Picture2.png",
+        "/Picture3.png",
+        "/Picture4.png",
+      ],
+    },
     // 🔹 Employee Evaluation Website
     {
       title: "Employee Evaluation Website",
@@ -63,12 +87,13 @@ const ProjectsSection = () => {
         "Development of an internal website for employee evaluation and performance tracking.",
       type: "Web Application",
       skills: [
-        "React",
-        "Express.js",
+         "JavaScript",
         "TypeScript",
+        "Node.js",
         "Postman",
-        "Web API",
         "PostgreSQL",
+        "GitHub",
+
       ],
       links: {
         github: "https://github.com/ibrahimkhalil11x/Stage",

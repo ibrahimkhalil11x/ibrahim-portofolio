@@ -8,7 +8,7 @@ const AboutSection = () => {
   const stats = [
     {
       label: "Projects Completed",
-      value: "5+",
+      value: "8+",
       icon: <Code2 className="w-5 h-5" />,
     },
   ];
