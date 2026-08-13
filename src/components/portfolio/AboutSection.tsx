@@ -44,10 +44,11 @@ const AboutSection = () => {
             <span className="gradient-text">About</span> Me
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-          I'm Ibrahim Khalil, a computer science student passionate about software development and emerging technologies. 
-          I'm eager to apply my technical and problem-solving skills to real-world, innovative projects. I specialize in React, mobile development, 
-          and AI automation, building modern, user-friendly applications that deliver seamless and intelligent user experiences , 
-          enabling workflow optimization and improved operational efficiency.
+          I'm Ibrahim Khalil, a graduate with a Bachelor's degree in Computer Science, passionate about software
+development and emerging technologies. I aim to leverage my technical and problem-solving skills in
+innovative, real-world projects. Specialized in React development, mobile, and AI automation, I enjoy
+designing modern, intuitive, and user-friendly web and mobile applications that deliver a smooth and
+intelligent user experience.
           </p>
         </div>
 
