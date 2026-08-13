@@ -146,7 +146,7 @@ const HeroSection = () => {
                     <DropdownMenuItem
                       onClick={() =>
                         window.open(
-                          "https://drive.google.com/file/d/1HVWp72-xRyYs8QhxIWVVQcF5vCQG-j5I/view?usp=drive_link",
+                          "https://drive.google.com/file/d/15Xv-WKfqJ7v0g_CgfIYDMHhbkaN71cOl/view?usp=drive_link",
                           "_blank"
                         )
                       }
@@ -158,7 +158,7 @@ const HeroSection = () => {
                     <DropdownMenuItem
                       onClick={() =>
                         window.open(
-                          "https://drive.google.com/file/d/1CRF3MV58e9RqalAsS5BtqIh31WvTEfF2/view?usp=drive_link",
+                          "https://drive.google.com/file/d/1B7wopMa5xS-4dPna8tbci4o2Oav6UhYD/view?usp=sharing",
                           "_blank"
                         )
                       }
